@@ -97,4 +97,42 @@ main h3 {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 480px) {
+  body {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 0;
+  }
+  .navigation {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  .navigation ul {
+    width: 100;
+    top: 0%;
+  }
+  .navigation ul a {
+    padding-right: 10px;
+  }
+  .container {
+    width: 100%;
+    margin-left: 0;
+    flex: 1;
+  }
+  .container main {
+    flex: 1;
+  }
+  .container footer {
+    flex: 0;
+  }
+}
+
 /*# sourceMappingURL=test-idea.css.map */

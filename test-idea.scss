@@ -14,6 +14,7 @@ body {
     background-color: lighten($MenuColor, 75%);
 }
 
+
 .navigation {
     height: 100%;
     width: 20%;
@@ -106,6 +107,49 @@ main {
             text-align: center;
             color: darken($MenuColor, 80%);
             opacity: 0.5;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    header {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex: 0;
+    }
+
+    .navigation {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: auto;
+
+        ul {
+            width: 100;
+            top: 0%;
+
+            a{
+                padding-right: 10px;
+            }
+        }
+
+    }
+    .container {
+        width: 100%;
+        margin-left: 0;
+        flex: 1;
+        main {
+            flex: 1;
+        }
+        footer {
+            flex: 0;
         }
     }
 }
